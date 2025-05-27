@@ -27,13 +27,16 @@ nav {
   max-height: 100px;
   max-width: 120px;
 }
-.navbar-links-contaier a {
+.navbar-links-container a {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
-  margin-right: 3rem;
+  margin-right: 2rem;
   text-decoration: none;
 }
+/*.nav-bar-menu-contaoner {
+  display: none;
+}*/
 .primary-button {
   background-color: rgb(159, 189, 245);
   border: none;
