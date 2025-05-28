@@ -34,9 +34,12 @@ nav {
   margin-right: 2rem;
   text-decoration: none;
 }
-/*.nav-bar-menu-contaoner {
+.nav-bar-menu-container {
+  cursor: pointer;
   display: none;
-}*/
+  font-size: 2rem;
+  margin-right: 2rem;
+}
 .primary-button {
   background-color: rgb(159, 189, 245);
   border: none;
@@ -51,4 +54,15 @@ nav {
 }
 .primary-button:hover {
   opacity: 0.5;
+}
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 100px;
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .nav-bar-menu-container {
+    display: flex;
+  }
 }
