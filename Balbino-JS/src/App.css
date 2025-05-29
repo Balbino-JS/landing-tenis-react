@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+/*CSS do Navbar*/
 img {
   height: auto;
   max-width: 100%;
@@ -65,4 +66,47 @@ nav {
   .nav-bar-menu-container {
     display: flex;
   }
+}
+
+/*CSS da página Home*/
+.home-banner-container {
+  display: flex;
+  padding: 4rem;
+  position: relative;
+}
+ /*
+.home-bannerimage-container {
+  max-width: 100%;
+  position: absolute;
+  right: -150px;
+  top: -100px;
+  z-index: -2;
+}
+*/
+.home-image-section {
+  display: flex;
+  flex: 1;
+}
+.home-primary-image img {
+  height: 640px;
+  margin-left: 90px;
+  object-fit: cover;
+  width: 750px;
+}
+.home-text-section {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.primary-heading {
+  color: #4c4c4c;
+  font-size: clamp(2rem, 5vw, 4rem);
+  max-width: 600px;
+}
+.primary-text {
+  color: #6a6a6a;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin: 1.5rem 0rem;
 }
