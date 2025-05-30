@@ -1,33 +1,38 @@
+/* CSS */
+
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;;
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
 }
-/*CSS do Navbar*/
+
 img {
   height: auto;
   max-width: 100%;
 }
 
 body {
-  background-color: #FFF;
+  background-color: #fff;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
+
 nav {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   min-height: 90px;
 }
+
 .nav-logo-container {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   max-height: 100px;
   max-width: 120px;
 }
+
 .navbar-links-container a {
   color: black;
   font-size: 1.1rem;
@@ -35,13 +40,16 @@ nav {
   margin-right: 2rem;
   text-decoration: none;
 }
+
 .nav-bar-menu-container {
-  cursor: pointer;
   display: none;
   font-size: 2rem;
+  cursor: pointer;
   margin-right: 2rem;
 }
-.primary-button {
+
+.primary-button,
+.secondary-button {
   background-color: rgb(159, 189, 245);
   border: none;
   border-radius: 5rem;
@@ -53,75 +61,96 @@ nav {
   padding: 0.9rem 1.75rem;
   transition: 0.3s;
 }
-.primary-button:hover {
+
+.primary-button:hover,
+.secondary-button:hover {
   opacity: 0.5;
 }
+
 @media (max-width: 800px) {
   .nav-logo-container {
     max-width: 100px;
   }
+
   .navbar-links-container {
     display: none;
   }
+
   .nav-bar-menu-container {
     display: flex;
   }
+
+  .home-banner-container {
+    max-width: 450px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .home-primary-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0;
+  }
+
+  .home-image-section,
+  .home-text-section {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .primary-heading,
+  .primary-text {
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+  }
 }
 
-/*CSS da página Home*/
 .home-banner-container {
   display: flex;
   padding: 4rem;
   position: relative;
 }
- /*
+
 .home-bannerimage-container {
   max-width: 100%;
   position: absolute;
-  right: -150px;
-  top: -100px;
+  right: -90px;
+  top: -150px;
   z-index: -2;
 }
-*/
+
 .home-image-section {
   display: flex;
   flex: 1;
 }
+
 .home-primary-image img {
   height: 640px;
+  width: 650px;
   margin-left: 90px;
   object-fit: cover;
-  width: 750px;
 }
+
 .home-text-section {
-  align-items: flex-start;
-  display: flex;
   flex: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
+
 .primary-heading {
-  color: #4c4c4c;
   font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
   max-width: 600px;
 }
+
 .primary-text {
-  color: #6a6a6a;
   font-size: clamp(1rem, 3vw, 1.5rem);
-  margin: 1.5rem 0rem;
-}
-.sencondary-button {
-   background-color: rgb(159, 189, 245);
-  border: none;
-  border-radius: 5rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-right: 1rem;
-  outline: none;
-  padding: 0.9rem 1.75rem;
-  transition: 0.3s;
-}
-.sencondary-button:hover {
-  opacity: 0.5;
+  color: #6a6a6a;
+  margin: 1.5rem 0;
 }
