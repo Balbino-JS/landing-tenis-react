@@ -109,6 +109,7 @@ nav {
   }
 }
 
+/*seção da home*/
 .home-banner-container {
   display: flex;
   padding: 4rem;
@@ -153,4 +154,31 @@ nav {
   font-size: clamp(1rem, 3vw, 1.5rem);
   color: #6a6a6a;
   margin: 1.5rem 0;
+}
+
+/*Seção da parte sobre nós */
+
+.about-section-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+
+}
+.about-section-image-container img {
+  margin-bottom: 85px;
+  margin-left: 240px;
+}
+.about-section-text-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+}
+.primary-subheading {
+  color: rgb(8, 201, 239);
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1rem;
 }
