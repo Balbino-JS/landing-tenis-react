@@ -1,6 +1,13 @@
+import AboutBackgroundImage from "../assets/mão+tenis.png" 
+
 const About = () => {
     return (
         <div className="about-section-text-container">
+           
+
+            <div className="about-section-image-contaoner">
+                <img src={AboutBackgroundImage} alt="mao+tenis" />
+            </div>
             <h2 className="primary-subheading">Sobre nós</h2>
             <h3 className="primary-heading"> É importante conhecer o molhor conforto para seus peis</h3>
 
